@@ -1,8 +1,7 @@
 version: "0.1.0"
 pre_ci_boot:
-   image: index.alauda.cn/alaudasa/centos6-jdk7-maven3
+   image: index.alauda.cn/alaudaorg/example-voting-app
    tag: "latest"
 ci:
-   - mvn package
    - cp -r target/ $ALAUDACI_DEST_DIR/target/
    - cp Dockerfile $ALAUDACI_DEST_DIR
