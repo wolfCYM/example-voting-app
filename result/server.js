@@ -11,7 +11,7 @@ var express = require('express'),
 io.set('transports', ['polling']);
 
 //var port = process.env.PORT ||4000;
-var port = 8080
+var port = 80
 var port_db = process.env.DB_PORT_5432_TCP_PORT;
 var addr = process.env.DB_PORT_5432_TCP_ADDR;
 var pg_conn = 'postgres://postgres@'+addr+':'+port_db+'/postgres';
